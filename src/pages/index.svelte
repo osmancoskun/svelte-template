@@ -1,16 +1,22 @@
 <script>
     import { metatags } from '@roxi/routify'
+    import Button from "../components/m-button.svelte"
     
-    metatags.title = 'My Routify app'
-    metatags.description = 'Description coming soon...'
+    metatags.title = 'Svelte Template'
+    metatags.description = 'Svelte Template with Beautiful Components'
 </script>
 
-<h1>Routify Starter Template</h1>
+<h1>Svelte Template With Components</h1>
 
-<p>
-    To see an example app that shows off a lot of Routify's features, go to <a href="/example">/example</a>
-</p>
+<Button disabled={true} textColor="blue" radius="10px" border="2px" borderInPx="2px" borderColor="green" shadow={true} >Osman</Button>
+<Button>
+    Normal Button
+</Button>
+<Button borderInPx="2px" borderColor="gray">Button With Border</Button>
+<Button borderInPx="2px" borderColor="Violet">Button With Violet Border</Button>
+<Button borderInPx="2px" borderColor="gray" textColor="blue">Button With Blue Text</Button>
 
-<p>
-    This template is ready to be used in production! just delete the example app at: src/pages/example
-</p>
+<Button borderInPx="2px" borderColor="gray" radius="10px">Button With 10px Radius</Button>
+
+
+
