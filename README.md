@@ -1,6 +1,11 @@
 # Svelte Template with Tools and Custom Components
- Routify
- Buefy Inspired UI Components
+ ## Routify
+ 
+ * Routes for Svelte, automated by your file structure.
+ * Routify offers a great developer experience to build the routes for your Svelte app
+ * Dont forget to check the link for more information ==> <a href="https://www.routify.dev/">Routify Website</a>
+ 
+ ## Buefy Inspired UI Components
 - [x] Button   
 - [x] Icon   
 - [ ] Input
