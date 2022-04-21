@@ -10,7 +10,7 @@
 To get started run:
 * Method 1 `npx degit`
 ```sh
-npx degit @osmancoskun/svelte-template <new-project-name>
+npx degit osmancoskun/svelte-template <new-project-name>
 cd <new-project-name>
 npm install
 npm run dev
