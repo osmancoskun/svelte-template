@@ -6,11 +6,13 @@
 - [ ] Input
 - [ ] Dropdown
 - [ ] Checkbox
+<img src="https://i.imgur.com/gSuetI1.png" alt="drawing" width="600px" height="350px"/>
+ Basic Layout System
 
-Basic Layout System
 - [x] Columns   
 - [x] Rows  
 - [ ] Responsivity
+<img src="https://i.imgur.com/61sBu9J.png" alt="drawing" width="600px" height="450px"/>
 
 ## Get started
 
