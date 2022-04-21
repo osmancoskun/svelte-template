@@ -25,7 +25,7 @@ npm run dev
 * Method 2 `git clone`
 ```sh
 git clone https://www.github.com/osmancoskun/svelte-template
-cd <new-project-name>
+cd svelte-template
 npm install
 npm run dev
 ```
