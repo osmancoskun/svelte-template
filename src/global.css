@@ -1,66 +1,176 @@
-html, body {
-	position: relative;
-	width: 100%;
-	height: 100%;
+:root {
+  --primary-color: #7957d5;
+  --primary-bg-color-light: #f2effb;
+  --primary-color-light: #552fbc;
+
+  --success-bg-color: #48c78e;
+  --success-bg-color-light: #effaf5;
+  --success-color-light: #257953;
+
+  --danger-bg-color: #f14668;
+  --danger-bg-color-light: #feecf0;
+  --danger-color-light: #cc0f35;
+
+  --warning-bg-color: #ffe08a;
+  --warning-color: rgba(0, 0, 0, 0.7);
+  --warning-border-color-outlined: #ffe08a;
+  --warning-color-outlined: rgba(0, 0, 0, 0.7);
+  --warning-bg-color-light: #fffaeb;
+  --warning-color-light: #946c00;
+
+  --info-bg-color: #3e8ed0;
+  --info-color-outlined: #3e8ed0;
+  --info-bg-color-light: #eff5fb;
+  --info-color-light: #296fa8;
+
+  --link-bg-color: #485fc7;
+  --link-bg-color-light: #eff1fa;
+  --link-color-light: #3850b7;
+
+  --light-bg-color: #f5f5f5;
+  --light-color: rgba(0, 0, 0, 0.7);
+
+  --dark-bg-color: #363636;
+
+  --text-color: #4a4a4a;
+
+  --ghost-color: #7957d5;
+
+  --button-border-color: #dbdbdb;
+  --button-color: #363636;
+  --button-hover-shadow: rgba(0, 0, 0, 0.2px);
+  --button-border-color-disabled: #dbdbdb;
+}
+.primary {
+  background-color: var(--primary-color);
+  color: white;
 }
 
-body {
-	color: #333;
-	margin: 0;
-	padding: 8px;
-	box-sizing: border-box;
-	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+.primary.outlined {
+  border-color: var(--primary-color);
+  background-color: white;
+  color: var(--primary-color);
+}
+.primary.light {
+  background-color: var(--primary-bg-color-light);
+  color: var(--primary-color-light);
+}
+.success {
+  background-color: var(--success-bg-color);
+  color: white;
 }
 
-a {
-	color: rgb(0,100,200);
-	text-decoration: none;
+.success.outlined {
+  border-color: var(--success-bg-color);
+  background-color: white;
+  color: var(--success-bg-color);
 }
-
-a:hover {
-	text-decoration: underline;
+.success.light {
+  background-color: var(--success-bg-color-light);
+  color: var(--success-color-light);
 }
-
-a:visited {
-	color: rgb(0,80,160);
+.danger {
+  background-color: var(--danger-bg-color);
+  color: white;
 }
-
-label {
-	display: block;
+.danger.outlined {
+  background-color: white;
+  border-color: var(--danger-bg-color);
+  color: var(--danger-bg-color);
 }
-
-input, button, select, textarea {
-	font-family: inherit;
-	font-size: inherit;
-	padding: 0.4em;
-	margin: 0 0 0.5em 0;
-	box-sizing: border-box;
-	border: 1px solid #ccc;
-	border-radius: 2px;
+.danger.light {
+  background-color: var(--danger-bg-color-light);
+  color: var(--danger-color-light);
 }
-
-input:disabled {
-	color: #ccc;
+.warning {
+  background-color: var(--warning-bg-color);
+  color: var(--warning-color);
 }
-
-input[type="range"] {
-	height: 0;
+.warning.outlined {
+  background-color: white;
+  border-color: var(--warning-border-color-outlined);
+  color: var(--warning-color-outlined);
 }
-
+.warning.light {
+  background-color: var(--warning-bg-color-light);
+  color: var(--warning-color-light);
+}
+.info {
+  background-color: var(--info-bg-color);
+  color: white;
+}
+.info.outlined {
+  background-color: white;
+  border-color: var(--info-bg-color-light);
+  color: var(--info-color-outlined);
+}
+.info.light {
+  background-color: var(--info-bg-color-light);
+  color: var(--info-color-light);
+}
+.link {
+  background-color: var(--link-bg-color);
+  border-color: transparent;
+  color: #fff;
+}
+.link.light {
+  background-color: var(--link-bg-color-light);
+  color: var(--link-color-light);
+}
+.light {
+  background-color: var(--light-bg-color);
+  border-color: transparent;
+  color: var(--var-color);
+}
+.dark {
+  background-color: var(--dark-bg-color);
+  border-color: transparent;
+  color: #fff;
+}
+.text {
+  background-color: transparent;
+  border-color: transparent;
+  color: var(--text-color);
+  text-decoration: underline;
+}
+.ghost {
+  background: none;
+  border-color: transparent;
+  color: var(--ghost-color);
+  text-decoration: none;
+}
+.rounded {
+  border-radius: 9999px;
+  padding-left: 1.25em;
+  padding-right: 1.25em;
+}
+.expanded {
+  width: 100%;
+}
 button {
-	color: #333;
-	background-color: #f4f4f4;
-	outline: none;
+  background-color: #fff;
+  border-width: 1px;
+  border-radius: 5px;
+  color: var(--button-color);
+  cursor: pointer;
+  justify-content: center;
+  padding: calc(0.5em - 1px) 1em;
+  text-align: center;
+  white-space: nowrap;
+  padding: 8px 12px;
+  margin: 5px 9px;
 }
-
-button:disabled {
-	color: #999;
+button::hover {
+  box-shadow: 1px 2px 3px var(--button-hover-shadow);
 }
-
-button:not(:disabled):active {
-	background-color: #ddd;
+button:active {
+  color: white;
+  background-color: lightgray;
+  border: 1px solid gray;
 }
-
-button:focus {
-	border-color: #666;
+button[disabled] {
+  background-color: #fff;
+  border-color: var(--button-border-color-disabled);
+/*   box-shadow: none;
+ */  opacity: 0.5;
 }
