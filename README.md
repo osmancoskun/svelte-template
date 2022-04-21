@@ -1,10 +1,13 @@
 # Svelte Template with Tools
 * Routify
 * Buefy Inspired UI Components
-- [x] Button   
-- [ ] Input
-- [ ] Dropdown
-- [ ] Checkbox
+-- [x] Button   
+-- [x] Icon   
+-- [ ] Input
+-- [ ] Dropdown
+-- [ ] Checkbox
+
+
 ## Get started
 
 To get started run:
