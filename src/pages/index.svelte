@@ -52,7 +52,20 @@
   </Row>
   <Row>
     <div class="container">
-      <Button type="expanded">Merhababasdjaskdkjaksdkalslkd</Button>
+      <Col>
+        <Button type="expanded primary ">
+          This is a long button that extends to the limit of the container
+        </Button>
+        <Button type="expanded success outlined">
+          This is a long button that extends to the limit of the container
+        </Button>
+        <Button type="expanded warning ">
+          This is a long button that extends to the limit of the container
+        </Button>
+        <Button type="expanded danger outlined">
+          This is a long button that extends to the limit of the container
+        </Button>
+      </Col>
     </div>
   </Row>
 </Col>
@@ -61,6 +74,64 @@
 <Icon icon="person" color="blue" size={48} />
 <Icon icon="home" color="green" size={48} />
 <Icon icon="settings" color="yellow" size={48} />
+
+<h3>Basic Flex Based Layout Component</h3>
+<h4>Rows</h4>
+<Row>
+  <div
+    style="height:50px;width:100px;border:1px solid gray;margin:10px;display:flex;justify-content:center;align-items:center"
+  >
+    Row Box
+  </div>
+  <div
+    style="height:50px;width:100px;border:1px solid gray;margin:10px;display:flex;justify-content:center;align-items:center"
+  >
+    Row Box
+  </div>
+  <div
+    style="height:50px;width:100px;border:1px solid gray;margin:10px;display:flex;justify-content:center;align-items:center"
+  >
+    Row Box
+  </div>
+  <div
+    style="height:50px;width:100px;border:1px solid gray;margin:10px;display:flex;justify-content:center;align-items:center"
+  >
+    Row Box
+  </div>
+  <div
+    style="height:50px;width:100px;border:1px solid gray;margin:10px;display:flex;justify-content:center;align-items:center"
+  >
+    Row Box
+  </div>
+</Row>
+<h4>Columns</h4>
+<Col>
+  <div
+    style="height:50px;width:100px;border:1px solid gray;margin:10px;display:flex;justify-content:center;align-items:center"
+  >
+    Row Box
+  </div>
+  <div
+    style="height:50px;width:100px;border:1px solid gray;margin:10px;display:flex;justify-content:center;align-items:center"
+  >
+    Row Box
+  </div>
+  <div
+    style="height:50px;width:100px;border:1px solid gray;margin:10px;display:flex;justify-content:center;align-items:center"
+  >
+    Row Box
+  </div>
+  <div
+    style="height:50px;width:100px;border:1px solid gray;margin:10px;display:flex;justify-content:center;align-items:center"
+  >
+    Row Box
+  </div>
+  <div
+    style="height:50px;width:100px;border:1px solid gray;margin:10px;display:flex;justify-content:center;align-items:center"
+  >
+    Row Box
+  </div>
+</Col>
 
 <style>
   .maman {
